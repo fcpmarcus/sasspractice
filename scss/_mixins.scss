@@ -2,19 +2,26 @@
 	background-color: orange;
 	color: #fff;
 }
+
+@mixin box-shadow($shadows...) {
+	box-shadow: $shadows;
+	-webkit-moz-box-shadow: $shadows;
+	-moz-moz-box-shadow: $shadows;
+}
+
 @mixin large-text {
 	font: {
 		size: 22px;
 		weight: bold;
 	}
 }
-@mixin rounded {
-	border-radius: 6px;
+@mixin rounded($radius: 6px) {
+	border-radius: $radius;
 }
 
-@mixin box {
-	@include rounded;
-	border: 1px solid #333;
+@mixin box($radius: 6px, $border: 1px solid #000) {
+	@include rounded($radius);
+	border: $border;
 }
 
 @mixin fancy-links {
