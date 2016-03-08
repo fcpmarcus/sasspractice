@@ -1,6 +1,5 @@
-@import "variables";
-@import "mixins";
-
+@import "partials/mixins";
+@import "partials/variables";
 
 @include fancy-links;
 
@@ -29,7 +28,11 @@ a {
 	@include warning;
 	padding: 8px 12px;
 }
-
+@include apply-to-ie-6 {
+	body {
+		font-size: 125%;
+	}
+}
 #header {
 	@include box($border: 1px solid #333, $radius: 12px);
 	@include box-shadow(2px 0px 4px #999, 1px 1px 6px $secondary-color);
