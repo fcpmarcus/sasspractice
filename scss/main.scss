@@ -13,6 +13,16 @@
   }
 }
 
+.error {
+  color: red;
+}
+
+.critical-error {
+  @extend .error;
+  bottom: 1px solid red;
+  font-weight: bold;
+}
+
 body {
   font-family: $text-font;
   color: $text-color;
