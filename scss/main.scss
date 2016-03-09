@@ -1,6 +1,6 @@
-@import "partials/mixins";
-@import "partials/variables";
 @import "partials/functions";
+@import "partials/variables";
+@import "partials/mixins";
 
 @include google-font("Alegreya+Sans");
 @include google-font("Titillium+Web");
@@ -79,14 +79,30 @@ a {
     max-width: $content-width;
   }
   margin: 0 auto;
+
   #content {
+    float: left;
+    width: 6*$col;
   }
 
   #sidebar {
+    float: right;
+    width: 2*$col;
+
+    li {
+      list-style-type: none;
+      padding: em(16px) em(20px);
+      border-bottom: 1px dashed #999;
+
+      &:hover {
+        background-color: #efefef;
+      }
+    }
   }
 }
 
 #footer {
+  clear: both;
   height: $footer-height;
   background-color: $ternary-color;
 }
