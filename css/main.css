@@ -17,7 +17,8 @@ a {
 body {
   font-family: "Alegreya Sans" Arial, sans-serif;
   font-size: 1.125em;
-  color: #fff; }
+  color: #fff;
+  background-color: #22222a; }
   @media only screen and (max-width: 960px) {
     body {
       font-size: 125%; } }
@@ -99,7 +100,7 @@ a {
       padding: 1em 1.25em;
       border-bottom: 1px dashed #999; }
       #main #sidebar li:hover {
-        background-color: #efefef; }
+        background-color: #c24721; }
 
 #footer {
   clear: both;

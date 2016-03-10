@@ -10,6 +10,7 @@ $secondary-color: #f27731;
 $ternary-color: #ccf962;
 $link-color: $secondary-color;
 $menu-item-color: white;
+$sidebar-hover: $secondary-color;
 
 @if $theme == Dark {
     $text-color: #fff;
@@ -19,6 +20,7 @@ $menu-item-color: white;
 	$ternary-color: #698932;
 	$link-color: $secondary-color;
 	$menu-item-color: white;
+	$sidebar-hover: $secondary-color;
 } @else if $theme == Light {
 	$text-color: #000;
     $body-background-color: #fff;
@@ -27,6 +29,7 @@ $menu-item-color: white;
 	$ternary-color: #b9da63;
 	$link-color: $secondary-color;
 	$menu-item-color: white;
+	$sidebar-hover: $secondary-color;
 }
 
 // Fonts
