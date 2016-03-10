@@ -7,7 +7,7 @@ a {
 * html body {
   font-size: 125%; }
 
-.error, .critical-error {
+.error, .critical-error, .cta-button, .super-cta-button {
   color: red; }
 
 .critical-error {
@@ -37,12 +37,30 @@ a {
   a:hover {
     color: #ca510d; }
 
+.sub-title {
+  font-style: italic; }
+
+.sub-title {
+  font-size: 1.25em; }
+
 .warning-button {
   background-color: orange;
   color: #fff;
   padding: 8px 12px; }
   .warning-button:hover {
     background-color: #ffb733; }
+
+.cta-button, .super-cta-button {
+  background-color: orange;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: bold; }
+  .cta-button:hover, .super-cta-button:hover {
+    background-color: #ffb733; }
+
+.super-cta-button {
+  font-size: 1.25em; }
 
 #header {
   border-radius: 12px;
