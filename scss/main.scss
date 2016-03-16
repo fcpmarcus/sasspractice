@@ -15,6 +15,12 @@ $speakers: joe-one, joe-two, joe-three;
   }
 }
 
+$font-sizes: (tiny: 8px, small: 10px, medium: 14px, large: 18px);
+@each $name, $size in $font-sizes {
+  .#{$name} {
+    font-size: #{$size};
+  }
+}
 
 @include google-font("Alegreya+Sans");
 @include google-font("Titillium+Web");

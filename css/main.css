@@ -27,6 +27,18 @@
 .joe-three-profile {
   background-image: url("/img/joe-three.png"); }
 
+.tiny {
+  font-size: 8px; }
+
+.small {
+  font-size: 10px; }
+
+.medium {
+  font-size: 14px; }
+
+.large {
+  font-size: 18px; }
+
 a {
   font-style: italic;
   text-decoration: none; }
