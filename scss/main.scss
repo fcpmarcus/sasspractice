@@ -8,6 +8,14 @@
   }
 }
 
+$speakers: joe-one, joe-two, joe-three;
+@each $speaker in $speakers {
+  .#{$speaker}-profile {
+    background-image: url('/img/#{$speaker}.png');
+  }
+}
+
+
 @include google-font("Alegreya+Sans");
 @include google-font("Titillium+Web");
 
